@@ -1,0 +1,109 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEFA YEDEK SAN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/src/styles/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-color4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="@Url.Action("Index","Default",new {area=""})"><img src="~/src/assets/logo.png" alt=""></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-content">
+                <div class="hamburger-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index","CarTypes",new {area="admin"})">Araç Tipi</a>
+                    </li>
+                   <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index","Brands",new {area="admin"})">Marka</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index","Histories",new {area="admin"})">Tarihçe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index","Models",new {area="admin"})">Model</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index","Products",new {area="admin"})">Ürün</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index","Categories",new {area="admin"})">Kategori</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <div class="input-group">
+                        <input class="form-control border-0 mr-2" type="search" placeholder="Ara" aria-label="Search">
+                        <button class="btn btn-primary border-0" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="separator"></div>
+
+    <div class="container">
+    @RenderBody()
+
+    </div>
+
+    <div class="separator"></div>
+
+    <footer class="bg-color4">
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col-sm-4 col-md-4">
+                    <p><a class="link-secondary text-decoration-none" href="@Url.Action("About","default")">Hakkımızda</a></p>
+                    <p><a class="link-secondary text-decoration-none" href="#">İnsan Kaynakları</a></p>
+                    <p><a class="link-secondary text-decoration-none" href="#">Banka ve Fatura Bilgileri</a></p>
+                    <p><a class="link-secondary text-decoration-none" href="#">İletişim & Künye</a></p>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <p><a class="link-secondary text-decoration-none" href="#">Kişisel Verilerin Korunması</a></p>
+                    <p><a class="link-secondary text-decoration-none" href="#">Gizlilik ve Çerez Politikası</a></p>
+                    <p><a class="link-secondary text-decoration-none" href="#">Üyelik Sözleşmesi</a></p>
+                    <p><a class="link-secondary text-decoration-none" href="@Url.Action("Cargotracking","default")">Kargo ve Teslimat</a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <p><a class="link-secondary text-decoration-none" href="#">Sıkça Sorulan Sorular</a></p>
+                    <p><a class="link-secondary text-decoration-none" href="#">Garanti ve İade</a></p>
+                    <p><a class="link-secondary text-decoration-none" href="#">Toplu Parça Teklifi</a></p>
+                    <p><a class="link-secondary text-decoration-none" href="#">Tüm Araçlar</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-dark text-decoration-none" href="https://sefayedeksan.com/">sefayedeksan.com</a>
+        </div>
+    </footer>
+
+    <script src="~/src/lib//jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

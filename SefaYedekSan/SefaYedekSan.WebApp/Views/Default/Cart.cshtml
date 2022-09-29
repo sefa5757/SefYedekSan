@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Cart";
+}
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="table-responsive">
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Ürün Adı</th>
+                        <th scope="col">Ürün Fiyatı</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody class="carts">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+    <script src="~/src/js/cart.js" type="module"></script>
+    <script src="~/src/js/cartpage.js" type="module"></script>
+}

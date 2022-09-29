@@ -1,0 +1,167 @@
+:root {
+  --color-1: #41729F;
+  --color-2: #5885AF;
+  --color-3: #274472;
+  --color-4: #C3E0E5;
+}
+
+* {
+    font-family:  'Mulish', system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';
+    -webkit-font-smoothing: antialiased;
+}
+
+.text-color1{color:var(--color-1) !important}
+.text-color2{color:var(--color-2) !important}
+.text-color3{color:var(--color-3) !important}
+.text-color4{color:var(--color-4) !important}
+
+.bg-color1{background-color:var(--color-1)}
+.bg-color2{background-color:var(--color-2)}
+.bg-color3{background-color:var(--color-3)}
+.bg-color4{background-color:var(--color-4)}
+
+
+.navbar-brand img{
+    max-height: 40px;
+}
+
+.parent-categories{
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.dropdown-mega .dropdown-menu{
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+.swiper {
+        width: 100%;
+        height: auto;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+     .opportunity-products .swiper-slide img {
+        display: block;
+        width: auto;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .top-seller-products .swiper-slide img {
+        display: block;
+        width: auto;
+        height: 250px;
+        object-fit: cover;
+      }
+
+     .top-seller-products  .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+
+
+      .separator{
+        margin-bottom: 15px;
+      }
+
+      .discount-card{
+        background-image: linear-gradient(to right, rgb(255,255,255,0.7), rgb(0,0,0,0.3));
+        border-left: 1px solid rgb(255,255,255,0.7);
+      }
+      .card-number{
+        letter-spacing: 5px;
+        font-weight: bold;
+      }
+      .card-number div{
+        padding-right: 30%;
+      }
+
+
+      .blink_me {
+        animation: blinker 1s linear infinite;
+      }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .discount-text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .brand-card-header{
+      display: flex;
+      justify-content: center;
+    }
+
+     .brand-card-header img{
+        display: block;
+        width: auto;
+        height: 50px;
+        padding: 5px;
+        border: 1px solid rgba(0,0,0,.125);
+        border-bottom: 0;
+        border-radius: 12%;
+
+    }
+  
+
+    .text-justify{
+      text-align: justify;
+    }
+
+    .history{
+      align-self: 100%;
+    }
+
+.ratings{
+  margin-left: 15px;
+}
+
+.ratings i {
+    color: #cecece;
+    font-size: 17px
+}
+
+.rating-color {
+    color: #fbc634 !important
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+.user-comments .swiper-slide{
+  text-align: left;
+}
+
+
+
